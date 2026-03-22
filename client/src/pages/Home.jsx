@@ -11,20 +11,17 @@ const Home = () => {
             <section className="hero" style={{
                 minHeight: '100vh',
                 display: 'flex',
-                alignItems: 'center',
                 background: 'var(--bg-cream)',
-                paddingTop: '120px',
-                paddingBottom: '80px'
             }}>
                 <div className="container" style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '4rem', alignItems: 'center' }}>
                     <div className="fade-in-up">
                         <span className="text-accent" style={{ fontWeight: '700', letterSpacing: '0.1rem', fontSize: '0.9rem', textTransform: 'uppercase', marginBottom: '1rem', display: 'block' }}>
                             Modern Nutrition for Modern Living
                         </span>
-                        <h1 style={{ fontSize: '4.8rem', color: 'var(--primary)', lineHeight: '1.05', marginBottom: '1.5rem' }}>
+                        <h1 style={{ color: 'var(--primary)' }}>
                             Your Health, <br /> <span className="text-accent">Simplified.</span>
                         </h1>
-                        <p style={{ fontSize: '1.3rem', color: 'var(--text-light)', marginBottom: '3rem', maxWidth: '550px' }}>
+                        <p style={{ color: 'var(--text-light)', marginBottom: '3rem', maxWidth: '550px' }}>
                             Chef-crafted meals designed by clinical doctors and culinary experts to fuel your body and nourish your mind. Freshly prepared, scientifically balanced, and delivered to your door.
                         </p>
                         <div style={{ display: 'flex', gap: '1.5rem' }}>

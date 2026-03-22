@@ -159,6 +159,39 @@ button {
   animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+/* Home Hero Specific Styles */
+.hero {
+  padding-top: 100px; /* Default desktop padding */
+}
+
+.hero h1 {
+  font-size: 4.8rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding-top: 120px;
+  }
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 140px;
+    align-items: flex-start !important; /* Avoid centering physics pushing text into header */
+  }
+  .hero h1 {
+    font-size: 2.5rem !important;
+  }
+  .hero p {
+    font-size: 1.1rem !important;
+  }
+}
+
 /* ---- MOBILE RESPONSIVENESS OVERRIDES ---- */
 @media (max-width: 900px) {
   /* Navbar Overrides */
@@ -238,8 +271,14 @@ button {
      padding: 1.5rem !important;
   }
 
-  /* Shrink padding for sections */
-  div[style*="padding: 160px 0"] {
-      padding: 100px 0 !important;
+  /* Global Section Padding Overrides */
+  div[style*="padding: 160px 0"], 
+  div[style*="padding: 120px 0"],
+  section[style*="padding: 160px 0"] {
+      padding: 120px 20px 60px 20px !important;
+  }
+
+  .home-page .section-padding {
+      padding: 60px 0 !important;
   }
 }
